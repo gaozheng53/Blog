@@ -1,3 +1,7 @@
+server:
+  port: 8081
+  session:
+    timeout: 5400
 spring:
   thymeleaf:
     mode: HTML
