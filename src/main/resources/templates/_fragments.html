@@ -3,7 +3,7 @@
 <head th:fragment="head(title)">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title th:replace="${title}">博客详情</title>
+  <title th:replace="${title}">Blog Details</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
   <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
   <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
@@ -19,11 +19,11 @@
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
       <h2 class="ui teal header item">Blog</h2>
-      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>首页</a>
-      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" idea icon"></i>分类</a>
-      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签</a>
-      <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" clone icon"></i>归档</a>
-      <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" info icon"></i>关于我</a>
+      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>Home</a>
+      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" idea icon"></i>Types</a>
+      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>Tags</a>
+      <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" clone icon"></i>Archives</a>
+      <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" info icon"></i>About</a>
       <a href="#" th:href="@{/admin}" class="m-item item m-mobile-hide"><i class=" user outline icon"></i>Login</a>
 
       <div class="right m-item item m-mobile-hide">
@@ -62,16 +62,16 @@
       <!--</div>-->
       <!--</div>-->
       <div class="seven wide column">
-        <h4 class="ui inverted header m-opacity-mini">联系我</h4>
+        <h4 class="ui inverted header m-opacity-mini">Contact</h4>
         <div class="ui inverted link list">
-          <a href="" class="item">QQ: 835070013</a>
-          <a href="" class="item">wx: Soulmate0726</a>
+          <!--<a href="" class="item">QQ: 835070013</a>-->
+          <!--<a href="" class="item">wx: Soulmate0726</a>-->
           <a href="" class="item">Email: gaozheng0726@gmail.com</a>
         </div>
       </div>
       <div class="nine wide column">
         <h4 class="ui inverted header m-opacity-mini">Description</h4>
-        <p class="m-opacity-mini m-text-spaced">这是我的个人博客， 记录学习上的点点滴滴， 欢迎留下你的脚印~ 欢迎各路大神指教... </p>
+        <p class="m-opacity-mini m-text-spaced">This site is my personal blog! Welcome everyone share your ideas with me! </p>
       </div>
     </div>
     <div class="ui inverted section divider"></div>

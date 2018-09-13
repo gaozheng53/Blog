@@ -42,7 +42,7 @@
           <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
               <div class="column">
-                <h3 class="ui teal header">博客</h3>
+                <h3 class="ui teal header">Blogs</h3>
               </div>
               <div class="right aligned column">
                 共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}"> 14 </h2> 篇
@@ -419,7 +419,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <i class="idea icon"></i>分类
+                  <i class="idea icon"></i>Types
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{types/-1}" target="_blank">more <i class="angle double right icon"></i></a>
@@ -463,7 +463,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <i class="tags icon"></i>标签
+                  <i class="tags icon"></i>Tags
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{tags/-1}" target="_blank">more <i class="angle double right icon"></i></a>
@@ -509,7 +509,7 @@
           <!--最新推荐-->
           <div class="ui segments m-margin-top-large">
             <div class="ui secondary segment ">
-              <i class="bookmark icon"></i>最新推荐
+              <i class="bookmark icon"></i>Recommend
             </div>
             <div class="ui segment" th:each="blog : ${recommendBlogs}">
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">用户故事（User Story）</a>
