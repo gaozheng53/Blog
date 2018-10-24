@@ -1,3 +1,4 @@
+# only applied when using embedded server
 server:
   port: 8081
   session:
