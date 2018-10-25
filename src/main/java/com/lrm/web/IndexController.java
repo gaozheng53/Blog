@@ -29,7 +29,7 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
-    @GetMapping("/")
+    @GetMapping(value="/",produces="application/json;charset=UTF-8")
     public String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model) {
         model.addAttribute("page",blogService.listBlog(pageable));
